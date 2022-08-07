@@ -15,7 +15,10 @@
     "faridlab/salt-laravel": "^9.0.2",
     "faridlab/laravel-search-query": "^9.0",
     "faridlab/salt-laravel-organization": "^9.0.1",
-    "faridlab/salt-laravel-employee": "^9.0.0"
+    "faridlab/salt-laravel-employee": "^9.0.0",
+    "faridlab/salt-laravel-employee-schedule": "^9.0.1",
+    "faridlab/salt-laravel-employee-timeoff": "^9.0.1",
+    "faridlab/salt-laravel-employee-calendar": "^9.0.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^9.0",
