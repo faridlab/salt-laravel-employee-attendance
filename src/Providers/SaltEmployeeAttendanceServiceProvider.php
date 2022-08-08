@@ -18,9 +18,9 @@ class SaltEmployeeAttendanceServiceProvider extends ServiceProvider
          *
          * Uncomment this function call to make the config file publishable using the 'config' tag.
          */
-        // $this->publishes([
-        //     __DIR__.'/../../config/salt-laravel-employee-attendance.php' => config_path('salt-laravel-employee-attendance.php'),
-        // ], 'config');
+        $this->publishes([
+            __DIR__.'/../../config/salt-laravel-employee-attendance.php' => config_path('salt-laravel-employee-attendance.php'),
+        ], 'employee-attendance-config');
 
         /**
          * Routes
@@ -28,6 +28,7 @@ class SaltEmployeeAttendanceServiceProvider extends ServiceProvider
          * Uncomment this function call to load the route files.
          * A web.php file has already been generated.
          */
+        $this->loadRoutesFrom(__DIR__.'/../../routes/api.php');
         // $this->loadRoutesFrom(__DIR__.'/../../routes/web.php');
 
         /**
@@ -82,9 +83,9 @@ class SaltEmployeeAttendanceServiceProvider extends ServiceProvider
          * Uncomment the second function call to make the migrations publishable using the 'migrations' tags.
          */
         // $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
-        // $this->publishes([
-        //     __DIR__.'/../../database/migrations/' => database_path('migrations')
-        // ], 'migrations');
+        $this->publishes([
+            __DIR__.'/../../database/migrations/' => database_path('migrations')
+        ], 'employee-attendance-migrations');
     }
 
     /**
